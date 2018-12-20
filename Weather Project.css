@@ -1,0 +1,49 @@
+body {
+	font-family: Roboto;
+}
+
+
+html, body {
+	height: 100%;
+}
+.container-fluid {
+	background-color: #111;
+	width: 100%;
+	min-height: 100%;
+	height:auto !important; /* cross-browser */
+	height: 100%; /* cross-browser */
+}
+.content {
+
+}
+
+.header h1 {
+	font-size: 75px;
+	color: #fff;
+
+}
+
+.feed {
+	
+}
+
+.shape i {
+	font-size:40px;
+	color: red;
+}
+
+p , p a {
+	color: #fff;
+}
+
+a:hover {
+	opacity: 0.6;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+h3 {
+	color: #fff;
+	font-size: 30px;
+}
