@@ -8,7 +8,7 @@ function getWeather() {
 		navigator.geolocation.getCurrentPosition(function(position){
 			lat = position.coords.latitude;
 			long = position.coords.longitude;
-			api = 'http://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+long+'&APPID=341e5a65bb0b94b49e144f80fe68892d';
+			api = 'https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+long+'&APPID=341e5a65bb0b94b49e144f80fe68892d';
 
 			var ourRequest = new XMLHttpRequest();
 			ourRequest.open('GET',api);
