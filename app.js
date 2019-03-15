@@ -25,7 +25,7 @@ app.use('/users', usersRouter);
 
 var http = require("http");
 setInterval(function() {
-    http.get("https://kfupm-quizes.herokuapp.com");
+    http.get("http://y-weather-app.herokuapp.com/");
 }, 300000); // every 5 minutes (300000)
 
 // catch 404 and forward to error handler
