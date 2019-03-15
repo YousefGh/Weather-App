@@ -9,10 +9,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-var http = require("http");
-setInterval(function() {
-    http.get("https://kfupm-quizes.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+var http = require("http");
+setInterval(function() {
+    http.get("https://kfupm-quizes.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
