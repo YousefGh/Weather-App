@@ -23,10 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-var http = require("http");
-setInterval(function() {
-    http.get("http://y-weather-app.herokuapp.com/");
-}, 300000); // every 5 minutes (300000)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
